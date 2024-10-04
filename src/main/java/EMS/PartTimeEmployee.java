@@ -2,17 +2,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package lab1;
+package EMS;
 
 /**
- * Represents a full-time employee.
+ * Represents a part-time employee.
  * 
  * @author han
  */
-public class FullTimeEmployee extends Employee  {
+public class PartTimeEmployee extends Employee {
     
     /**
-     * Constructor to initialize a full-time employee.
+     * Constructor to initialize a part-time employee.
      * 
      * @param id the employee ID
      * @param name the employee name
@@ -21,23 +21,24 @@ public class FullTimeEmployee extends Employee  {
      * @param hours the working hours per week
      * @param salary the employee salary
      */
-    public FullTimeEmployee(int id, String name, String department, String role, int hours, double salary) {
+    public PartTimeEmployee(int id, String name, String department, String role, int hours, double salary) {
         super(id, name, department, role, hours, salary);
     }
 
     @Override
     public void clockIn() {
-        System.out.println("Full-time employee " + getName() + " has clocked in.");
+        System.out.println("Part-time employee " + getName() + " has clocked in.");
     }
 
     @Override
     public void clockOut() {
-        System.out.println("Full-time employee " + getName() + " has clocked out.");
+        System.out.println("Part-time employee " + getName() + " has clocked out.");
     }
 
     @Override
     public void trackWorkHours() {
-        System.out.println("Tracking work hours for full-time employee " + getName() + ".");
+        System.out.println("Tracking work hours for part-time employee " + getName() + ".");
     }
+    
     
 }

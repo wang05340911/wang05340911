@@ -3,10 +3,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit5TestClass.java to edit this template
  */
 
-import lab1.Employee;
-import lab1.EmployeeManager;
-import lab1.FullTimeEmployee;
-import lab1.PartTimeEmployee;
+import EMS.Employee;
+import EMS.EmployeeManager;
+import EMS.FullTimeEmployee;
+import EMS.PartTimeEmployee;
 import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
