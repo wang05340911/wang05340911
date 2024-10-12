@@ -4,24 +4,37 @@
  */
 package menus;
 
-import components.Dessert;
-import components.Drink;
-import components.Entree;
-import components.MainCourse;
 import menu_factory.RestaurantMenuFactory;
 
 /**
- *
+ * The {@code SpringRestaurantMenu} class is a concrete implementation of the {@code RestaurantMenu} class.
+ * It is responsible for creating and populating the Spring menu by using the {@code RestaurantMenuFactory}
+ * to create the specific items such as entree, main course, dessert, and drink for the Spring season.
+ * 
+ * This class overrides the {@code populateMenu} method to generate the menu items for the Spring menu.
+ * 
  * @author gouraya
  */
 public class SpringRestaurantMenu extends RestaurantMenu {
 
+    /**
+     * A factory that produces the specific items for the Spring menu.
+     */
     RestaurantMenuFactory theFactory;
-    
+
+    /**
+     * Constructor that accepts a {@code RestaurantMenuFactory} to initialize the factory.
+     * 
+     * @param factory the factory that will be used to create the Spring menu items
+     */
     public SpringRestaurantMenu(RestaurantMenuFactory factory) {
         this.theFactory = factory;
     }
     
+    /**
+     * Populates the Spring menu by creating and assigning the entree, main course, dessert, and drink
+     * using the provided {@code RestaurantMenuFactory}.
+     */
     @Override
     public void populateMenu() {
         System.out.println("\nAdding items to " + getName());
