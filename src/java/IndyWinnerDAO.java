@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class IndyWinnerDAO {
-    private final String driverName = "com.mysql.cj.jdbc.Driver";
+    private final String driverName = "com.mysql.jdbc.Driver";
     private final String connectionURL = "jdbc:mysql://localhost:3306/INDYWINNERS";
     private final String user = "root";
     private final String pass = "Aa880911";
